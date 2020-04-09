@@ -1,5 +1,4 @@
 body{
-  background-color: pink;
 }
 section{
   border-bottom: 2px solid red;
@@ -7,14 +6,24 @@ section{
 }
 
 #main-menu{
-  background:rgba(255, 50, 0, 0.7);
   height: 100%;
   width: 320px;
   position: absolute;
   top: 0;
   left: -320px;
   transition: 1s all ease;
+   background: rgb(41, 46, 56);
 }
 #main-menu:target {
   left: 0;
+}
+#main-menu a{
+  display: block;
+  padding: .75em 15px;
+  line-height: 1em;
+  color: #fff;
+}
+#main-menu ul{
+  min-height: 100%;
+  width: 200px;
 }
